@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Style Salon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bella Style Salon</h1>
+        <p>Your premier destination for beauty and style.</p>
+    </header>
+
+    <main>
+        <!-- Sección Interactiva -->
+        <section>
+            <h2>Select a Service</h2>
+            <select id="serviceSelector">
+                <option value="">-- Choose a Service --</option>
+                <option value="haircut">Hair Styling & Cut - $45</option>
+                <option value="coloring">Full Color & Highlights - $120</option>
+                <option value="facial">Rejuvenating Facial - $85</option>
+                <option value="manicure">Luxury Manicure - $35</option>
+            </select>
+            <p id="priceDisplay">Please select a service above.</p>
+        </section>
+
+        <!-- Formulario con Validación -->
+        <section>
+            <h2>Book an Appointment</h2>
+            <form id="bookingForm">
+                <label for="clientEmail">Email Address:</label>
+                <input type="text" id="clientEmail" placeholder="Enter your email">
+                <span id="emailError" style="color: red; display: block; margin-top: 5px;"></span>
+                <button type="submit" style="margin-top: 10px;">Submit Booking</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Archivo de JavaScript obligatorio -->
+    <script src="script.js"></script>
+</body>
+</html>
